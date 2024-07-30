@@ -13,12 +13,17 @@
    npm install
    ```
 
-3. Run the server:
+3. Run the script to initialise Data from Dummy API
+   ```bash
+   node src/data/data_init.js
+   ```
+
+4. Run the server:
    ```bash
    node src/app.js
    ```
 
-4. Access the API at:
+5. Access the API at:
    ```
    http://localhost:4545/api/data
    ```

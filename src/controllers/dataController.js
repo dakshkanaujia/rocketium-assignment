@@ -1,10 +1,10 @@
 const dummyData = require('../data/dummyData.json');
 
-exports.getAllData = (req, res) => {
+const getAllData = (req, res) => {
   res.json(dummyData);
 }
 
-exports.filterData = (req, res) => {
+const filterData = (req, res) => {
     const { sortBy, filterBy, filterValue } = req.query;
     let filteredData = [...dummyData];
     
@@ -22,3 +22,5 @@ exports.filterData = (req, res) => {
     
     res.json(filteredData);    
 }
+
+module.exports = {getAllData, filterData};
