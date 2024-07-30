@@ -31,3 +31,19 @@
     - `filterBy`: Filter by field
     - `filterValue`: Value to filter
     - `sortBy`: Sort by field
+
+## Postman Collection
+
+You can import the Postman collection to test the API endpoints. Download the collection from the link below and import it into Postman.
+
+[Download Postman Collection](./postman_collection.json)
+
+### How to Import the Collection
+
+1. Open Postman.
+2. Click on the **Import** button in the top left corner.
+3. Choose the **File** tab.
+4. Click on **Choose Files** and select the `postman_collection.json` file.
+5. Click **Import**.
+
+Now you should see the collection in your Postman with all the documented endpoints.

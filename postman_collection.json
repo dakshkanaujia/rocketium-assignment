@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "6c954d27-7060-43fc-a98e-9c8ff82c314e",
+		"name": "Rocketium-Node.js-Assignment",
+		"description": "A Postman Collection, to display all the endpoints working",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33553558"
+	},
+	"item": [
+		{
+			"name": "Get All Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4545/api/data",
+					"host": [
+						"localhost"
+					],
+					"port": "4545",
+					"path": [
+						"api",
+						"data"
+					]
+				},
+				"description": "Get all the data of the given **Dummy JSON Data**"
+			},
+			"response": []
+		},
+		{
+			"name": "Sorting using version",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4545/api/data/filter?sortBy=version",
+					"host": [
+						"localhost"
+					],
+					"port": "4545",
+					"path": [
+						"api",
+						"data",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "version"
+						}
+					]
+				},
+				"description": "Sort the data using **version** data attribute"
+			},
+			"response": []
+		},
+		{
+			"name": "Filter on Languages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4545/api/data/filter?filterBy=language&filterValue=hindi",
+					"host": [
+						"localhost"
+					],
+					"port": "4545",
+					"path": [
+						"api",
+						"data",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "filterBy",
+							"value": "language"
+						},
+						{
+							"key": "filterValue",
+							"value": "hindi"
+						}
+					]
+				},
+				"description": "Filter the data using **language** attribute"
+			},
+			"response": []
+		},
+		{
+			"name": "Filter on Names",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4545/api/data/filter?filterBy=name&filterValue=preeti",
+					"host": [
+						"localhost"
+					],
+					"port": "4545",
+					"path": [
+						"api",
+						"data",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "filterBy",
+							"value": "name"
+						},
+						{
+							"key": "filterValue",
+							"value": "preeti"
+						}
+					]
+				},
+				"description": "Filter the data using **name** attribute"
+			},
+			"response": []
+		}
+	]
+}
