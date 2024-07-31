@@ -1,26 +1,39 @@
 const dummyData = require('../data/dummyData.json');
 
 const getAllData = (req, res) => {
-  res.json(dummyData);
-}
-
-const filterData = (req, res) => {
-    const { sortBy, filterBy, filterValue } = req.query;
-    let filteredData = [...dummyData];
-    
-    if (filterBy && filterValue) {
-        if(filterBy.toLowerCase() === 'name') {
-            filteredData = filteredData.filter(item => item[filterBy].toLowerCase().includes(filterValue.toLowerCase()));
+    try{
+        if(dummyData && dummyData.length != 0){
+            res.json(dummyData);
         }else{
-            filteredData = filteredData.filter(item => item[filterBy].toLowerCase() == filterValue.toLowerCase());
+            res.status(404).json({message: 'No data found'});
         }
+    }catch(error){
+        console.error('Error fetching data:', error);
+        res.status(500).json({message: 'Internal Server Error'});
     }
-    
-    if (sortBy) {
-        filteredData.sort((a, b) => (a[sortBy] > b[sortBy]) ? 1 : -1);
+}
+const filterData = (req, res) => {
+    try {
+        const { sortBy, filterBy, filterValue } = req.query;
+        let filteredData = [...dummyData];
+
+        if (filterBy && filterValue) {
+            if (filterBy.toLowerCase() === 'name') {
+                filteredData = filteredData.filter(item => item[filterBy].toLowerCase().includes(filterValue.toLowerCase()));
+            } else {
+                filteredData = filteredData.filter(item => item[filterBy].toLowerCase() == filterValue.toLowerCase());
+            }
+        }
+
+        if (sortBy) {
+            filteredData.sort((a, b) => (a[sortBy] > b[sortBy]) ? 1 : -1);
+        }
+
+        res.json(filteredData);
+    } catch (error) {
+        console.error('Error filtering data:', error);
+        res.status(500).json({ message: 'Internal Server Error' });
     }
-    
-    res.json(filteredData);    
 }
 
 module.exports = {getAllData, filterData};
