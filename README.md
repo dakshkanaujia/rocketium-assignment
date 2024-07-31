@@ -44,12 +44,19 @@ Base URL: `https://rocketium-assignment-xxeq.onrender.com/`
 
 ## Endpoints
 
-| **Method** | **URL**                                                         | **Query Params**                  | **Description**                                 |
-|------------|-----------------------------------------------------------------|----------------------------------|-------------------------------------------------|
-| GET        | `/api/data`                                                     |                                  | Get all the data from the Dummy JSON Data      |
-| GET        | `/api/data/filter?sortBy=version`                               | `sortBy=version`                 | Sort the data using the `version` attribute    |
-| GET        | `/api/data/filter?filterBy=language&filterValue=hindi`          | `filterBy=language`<br>`filterValue=hindi` | Filter the data using the `language` attribute |
-| GET        | `/api/data/filter?filterBy=name&filterValue=preeti`             | `filterBy=name`<br>`filterValue=preeti` | Filter the data using the `name` attribute     |
+| **Method** | **URL**                                                                 | **Query Params**                  | **Description**                                 |
+|------------|-------------------------------------------------------------------------|----------------------------------|-------------------------------------------------|
+| GET        | `/api/data`                                                               |                                  | Get all the data from the Dummy JSON Data      |
+| GET        | `/api/data/filter?sortBy=version`                                         | `sortBy=version`                 | Sort the data using the `version` attribute    |
+| GET        | `/api/data/filter?filterBy=language&filterValue=hindi`                    | `filterBy=language`<br>`filterValue=hindi` | Filter the data using the `language` attribute |
+| GET        | `/api/data/filter?filterBy=name&filterValue=preeti`                       | `filterBy=name`<br>`filterValue=preeti` | Filter the data using the `name` attribute     |
+
+## Testing Links
+
+- **Get All Data**: [Test Endpoint](https://rocketium-assignment-xxeq.onrender.com/api/data)
+- **Sort by Version**: [Test Endpoint](https://rocketium-assignment-xxeq.onrender.com/api/data/filter?sortBy=version)
+- **Filter by Language**: [Test Endpoint](https://rocketium-assignment-xxeq.onrender.com/api/data/filter?filterBy=language&filterValue=hindi)
+- **Filter by Name**: [Test Endpoint](https://rocketium-assignment-xxeq.onrender.com/api/data/filter?filterBy=name&filterValue=preeti)
 
 
 
