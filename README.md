@@ -37,6 +37,23 @@
     - `filterValue`: Value to filter
     - `sortBy`: Sort by field
 
+
+## API DOCUMENTATION
+# Rocketium Node.js Assignment API Documentation
+
+Base URL: `https://rocketium-assignment-xxeq.onrender.com/`
+
+## Endpoints
+
+| **Method** | **URL**                                                         | **Query Params**                  | **Description**                                 |
+|------------|-----------------------------------------------------------------|----------------------------------|-------------------------------------------------|
+| GET        | `/api/data`                                                     |                                  | Get all the data from the Dummy JSON Data      |
+| GET        | `/api/data/filter?sortBy=version`                               | `sortBy=version`                 | Sort the data using the `version` attribute    |
+| GET        | `/api/data/filter?filterBy=language&filterValue=hindi`          | `filterBy=language`<br>`filterValue=hindi` | Filter the data using the `language` attribute |
+| GET        | `/api/data/filter?filterBy=name&filterValue=preeti`             | `filterBy=name`<br>`filterValue=preeti` | Filter the data using the `name` attribute     |
+
+
+
 ## Postman Collection
 
 You can import the Postman collection to test the API endpoints. Download the collection from the link below and import it into Postman.
@@ -52,3 +69,5 @@ You can import the Postman collection to test the API endpoints. Download the co
 5. Click **Import**.
 
 Now you should see the collection in your Postman with all the documented endpoints.
+
+
