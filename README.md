@@ -39,7 +39,6 @@
 
 
 ## API DOCUMENTATION
-# Rocketium Node.js Assignment API Documentation
 
 Base URL: `https://rocketium-assignment-xxeq.onrender.com/`
 
