@@ -53,10 +53,10 @@ Base URL: `https://rocketium-assignment-xxeq.onrender.com/`
 
 ## Testing Links
 
-- **Get All Data**: [Test Endpoint](https://rocketium-assignment-xxeq.onrender.com/api/data)
-- **Sort by Version**: [Test Endpoint](https://rocketium-assignment-xxeq.onrender.com/api/data/filter?sortBy=version)
-- **Filter by Language**: [Test Endpoint](https://rocketium-assignment-xxeq.onrender.com/api/data/filter?filterBy=language&filterValue=hindi)
-- **Filter by Name**: [Test Endpoint](https://rocketium-assignment-xxeq.onrender.com/api/data/filter?filterBy=name&filterValue=preeti)
+- **Get All Data**: [https://rocketium-assignment-xxeq.onrender.com/api/data](https://rocketium-assignment-xxeq.onrender.com/api/data)
+- **Sort by Version**: [https://rocketium-assignment-xxeq.onrender.com/api/data/filter?sortBy=version](https://rocketium-assignment-xxeq.onrender.com/api/data/filter?sortBy=version)
+- **Filter by Language**: [https://rocketium-assignment-xxeq.onrender.com/api/data/filter?filterBy=language&filterValue=hindi](https://rocketium-assignment-xxeq.onrender.com/api/data/filter?filterBy=language&filterValue=hindi)
+- **Filter by Name**: [https://rocketium-assignment-xxeq.onrender.com/api/data/filter?filterBy=name&filterValue=preeti](https://rocketium-assignment-xxeq.onrender.com/api/data/filter?filterBy=name&filterValue=preeti)
 
 
 
